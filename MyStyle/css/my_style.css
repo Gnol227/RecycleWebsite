@@ -1,0 +1,234 @@
+@font-face {
+	font-family: font_logo;
+	src: url('../font/HELVETICAINSERATLTSTD-ROMAN.OTF') format('opentype');
+}	
+@font-face {
+	font-family: homepage_number;
+	src: url('../font/ICIELNOVECENTOSANS-ULTRABOLD.OTF') format('opentype');
+}
+@font-face {
+	font-family: homepage_text;
+	src: url('../font/HELVETICALTSTD-LIGHT.OTF') format('opentype');
+}
+body {
+	background-image: url(../image/background-image.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #464646;
+	background-attachment: fixed;
+}
+
+.my-navbar-brand {
+	color: #2eb82e;
+	font-size: 30px;
+	font-weight: bold;
+	font-family:font_logo;
+	padding-right: 10px;
+}
+
+.my-navbar-brand:hover {
+	text-decoration: none;
+	color: #009900;
+}
+
+.navbar-toggler {
+	border: none;
+}
+.my-left {margin-top: 10%;}
+.my-left, .my-right {
+	width: 100%;
+	height: 200px;
+}
+.first-number {width: 35%;}
+.second-number {width: 30%;}
+.third-number {width: 35%;}
+.first-word {width: 35%;}
+.second-word {width: 22%; text-align:center; }
+.third-word {width: 35%; text-align: left; }
+.first-number, .second-number, .third-number {
+	font-family: homepage_number;
+	height: 200px;
+	float: left;
+	position: relative;
+	font-family: "Allerta Stencil", Sans-serif;
+	font-size: 80px;
+}
+.first-word, .second-word, .third-word {
+	height: 200px;
+	float: left;
+	position: relative;
+	font-family: "Allerta Stencil", Sans-serif;
+	font-size: 25px;
+}
+.first-number p {
+	position: absolute;
+	right:0;
+	bottom:0;
+}
+.first-word p {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.second-number p {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom:0;
+}
+.third-number p {
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+	.my-left {
+		float: left;
+		width: 40%;
+		margin-right: 5%;
+	}
+	.my-right {
+		float: right;
+		width: 55%;
+		margin-top: 13%;
+	}
+	.my-left, .my-right {
+		height: 350px;
+	}
+	.first-number, .first-word {height: 35%;}
+	.second-number {height: 30%;}
+	.third-number, .third-word {height: 35%;}
+	.first-number, .second-number, .third-number {
+		font-family: homepage_number;
+		position: relative;
+		width: 100%;
+		float: none;
+		font-size: 60px;
+	}
+	.first-word, .second-word, .third-word {
+		font-family: homepage_text;
+		position: relative;
+		width: 100%;
+		float:none;
+		font-size:20px;
+	}
+	.first-word {width: 60%;}
+	.second-word {height: 25%; width: 60%; margin-top: 5%; text-align: left;}
+	.first-number p {margin-bottom: -5%;}
+	.third-number p {bottom: 30%;}
+	.first-number p, .second-number p, .third-number p {
+		right:0;
+		position: absolute;
+		text-align: right;
+	}
+	.first-word p {top: 40%;}
+	.second-word p {}
+	.third-word p {}
+	.first-word p, .second-word p, .third-word p {
+		position: absolute;
+	}
+	
+	/* Navigation bar's items */
+	.my-nav-link {
+	display: block;
+	font-size: 14px;
+	color: #3bb300;
+	text-decoration: none;
+	padding: 10px;
+	}
+	.my-nav-link:hover {
+	text-decoration: none;
+	color: white;
+	}
+}
+
+@media only screen and (min-width: 568px) and (max-width: 1024px) {
+	.my-left {
+		float: left;
+		width: 45%;
+		margin-right: 5%;
+	}
+	.my-right {
+		float: right;
+		width: 50%;
+		margin-top: 12%;
+	}
+	.my-left, .my-right {
+		height: 350px;
+	}
+	.first-number, .first-word {height: 35%;}
+	.second-number {height: 30%;}
+	.third-number, .third-word {height: 35%;}
+	.first-number, .second-number, .third-number {
+		position: relative;
+		width: 100%;
+		float: none;
+		font-size: 60px;
+	}
+	.first-word, .second-word, .third-word {
+		position: relative;
+		width: 100%;
+		float:none;
+		font-size:23px;
+	}
+	.first-word {width: 38%;}
+	.second-word {width: 45%; height: 23%; margin-top: 0%; text-align: left;}
+	.third-word {width: 60%;}
+	.first-number p {margin-bottom: -5%;}
+	.third-number p {bottom: 30%;}
+	.first-number p, .second-number p, .third-number p {
+		right:0;
+		position: absolute;
+		text-align: right;
+	}
+	.first-word p {top: 40%;}
+	.second-word p {}
+	.third-word p {}
+	.first-word p, .second-word p, .third-word p {
+		position: absolute;
+	}
+	
+	/* Navigation bar's items */
+	.my-nav-link {
+	display: block;
+	font-size: 14px;
+	color: #3bb300;
+	text-decoration: none;
+	padding: 10px;
+	}
+	.my-nav-link:hover {
+	text-decoration: none;
+	color: white;
+	}
+}
+/* Hamburger menu */
+.navbar-toggler:focus{
+	outline:none !important;
+}
+.hbg-icon {
+	margin-bottom: 15%;
+	display: block;
+}
+.hbg-icon:hover {
+	opacity: 0.8;
+}
+/* Navigation bar's items */
+.nav-item {
+	text-align: center;
+}
+.nav-item:hover {
+	background-color:#e65c00;
+}
+.my-nav-link {
+	display: block;
+	font-size: 14px;
+	color: #3bb300;
+	text-decoration: none;
+	padding: 10px;
+}
+.my-nav-link:hover {
+	text-decoration: none;
+	color: white;
+}
